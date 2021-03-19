@@ -1,0 +1,72 @@
+/*Playing with styles*/
+body {
+    background-color: rgba(0,0,0,1);
+    font-family: Arial, Calibri, Impact;
+    color: rgba(256,256,256,1);
+    text-align: justify;
+    overflow: auto;
+}
+
+header {
+    background-color: rgba(100,0,256,1);
+    background: linear-gradient(rgba(100,0,256,1), rgba(0,0,0,0));
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    color: rgba(256, 256, 256, 1);
+}
+
+    nav a {
+        font-weight: bold;
+        display:inline-block;
+        width:20%;
+        background-color: rgba(256,256,256,1);
+    }
+
+h2 {
+    color: rgba(256,256,256,1);
+    text-indent: 25px;
+    font-style: normal !important;
+}
+
+section {
+    display: inline-block;
+    width: 100%;
+    border: solid rgba(0,0,0,1);
+    border-width: 1px 7px 9px 1px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-color: rgba(10,10,10,1);
+    background: linear-gradient(rgba(10,10,10,1),rgba(100,100,100,1));
+
+}
+
+.halfSection {
+    width:49%;
+}
+
+#favFood ul {
+    list-style-type:upper-roman;
+}
+
+#achievements {
+    font-style: italic;
+    float: right;
+    height: 250px;
+}
+
+    #achievements label, progress {
+        display: block;
+    }
+
+#aboutMe {
+    clear: both;
+    width: 100%;   
+}
+
+footer {
+    background-color: rgba(100,100,100,1);
+    color: rgba(256,256,256,1); 
+}
