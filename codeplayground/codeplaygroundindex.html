@@ -5,16 +5,18 @@
     <meta charset="utf-8" />
     <title>Learning Code</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/codeplayground.js"></script>
 </head>
-<body>
-    <header id="headerSection">
-        <h1>Coding playground</h1>
+<body onload="showDate()">
+    <header>
+        <h1 id="pageTitle">Coding playground</h1>
         <p>Practicing html css and javascript code here, mistakes abound</p>
+        <button type="button" onclick="testFunc()">Testing functions</button>
         <!--Navigation-->
         <nav aria-label="Navigation">
             <ol>
                 <li aria-label="To other pages">
-                    <p>Other pages</p>
+                    Other pages
                     <ul>
                         <li><a href="html.html" target="_blank">HTML Homepage</a></li>
                         <li><a href="css.html" target="_blank">CSS Homepage</a></li>
@@ -22,7 +24,7 @@
                     </ul>
                 </li>
                 <li aria-label="Current page">
-                    <p>Current page</p>
+                    Current page
                     <ul>
                         <li><a href="#hwSection">Homework section</a></li>
                     </ul>
@@ -34,6 +36,7 @@
         <!--Homework section-->
         <section id="hwSection" class="tripleTable">
             <h1>Homework</h1>
+            <!--HTML-->
             <table id="hwHTML">
                 <thead>
                     <tr><th colspan="4">HTML</th></tr>
@@ -52,7 +55,8 @@
                         <td><a href="homework/HTMLUofMFinalProject.html" target="_blank" aria-label="Go to final project">Go</a></td>
                     </tr>
                 </tbody>
-            </table>       
+            </table>    
+            <!--CSS-->
             <table id="hwCSS">
                 <thead>
                     <tr><th colspan="4">CSS</th></tr>
@@ -84,6 +88,7 @@
                     </tr>
                 </tbody>
             </table>
+            <!--JS-->
             <table id="hwJS">
                 <thead>
                     <tr><th colspan="4">JavaScript</th></tr>
@@ -98,8 +103,52 @@
                     <tr>
                         <td>Coursera</td>
                         <td>UofMichigan</td>
+                        <td>Homework 1</td>
+                        <td><a href="homework/JSUofMHW1/index.html">Go</a></td>
                     </tr>
                 </tbody>
+            </table>
+        </section>
+        <!--Playground-->
+        <section>
+            <h1>Playground</h1>
+            <ul>
+                <li>Javascript <a href="js/jsplay.html" target="_blank">Go</a></li>
+            </ul>
+        </section>
+        <section>
+            <h1>Resources</h1>
+            <ul>
+                <li>w3school<a href="https://www.w3schools.com/">here</a></li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>HTML</th>
+                        <th>CSS</th>
+                        <th>JS</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>HTML tags cheatsheet <a href="https://www.wpkube.com/html5-cheat-sheet/">here</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Beginner's guide <a href="https://www.sitepoint.com/beginners-guide-javascript-variables-and-datatypes/">here</a></li>
+                                <li>Lexical grammar <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar">here</a></li>
+                                <li>Quick reference card<a href="http://www.cheat-sheets.org/saved-copy/jsquick.pdf">here</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                </thead>
             </table>
         </section>
     </main>
@@ -108,6 +157,7 @@
         <p>Copyright &#169; Holtzrogue 2021</p>
         <a href="#headerSection">Back to top</a>
         <a href="http://holtzrogue.github.io">GitHub main page</a>
+        <p id="currentTime"></p>
     </footer>
 </body>
 </html>

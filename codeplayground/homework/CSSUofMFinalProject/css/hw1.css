@@ -77,25 +77,26 @@ th {
     padding: 10px;
 }
 
-th:first-child {
-    border-top-left-radius: 5px;
-}
-th:last-child {
-    border-top-right-radius: 5px;
-}
+    th:first-child {
+        border-top-left-radius: 5px;
+    }
+
+    th:last-child {
+        border-top-right-radius: 5px;
+    }
 
 tr {
     background-color: rgba(0,0,0,0.8);
     text-align: center;
 }
 
-tr td:first-child, tr th:first-child {
-    text-align:left;
-}
+    tr td:first-child, tr th:first-child {
+        text-align: left;
+    }
 
-tr:hover {
-    background-color: rgba(0,0,0,1);
-}
+    tr:hover {
+        background-color: rgba(0,0,0,1);
+    }
 
 td {
     padding: 10px;

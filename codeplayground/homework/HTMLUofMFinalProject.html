@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/HTMLUofMFinalProject.css" />
 </head>
 <body>
+
     <header>
-        <h1>Holtzrogue</h1>
+        <h1 id="pageTitle">Holtzrogue</h1>
         <nav>
             <a href="#favFood">One</a>
             <a href="#achievements">Two</a>
@@ -18,7 +19,7 @@
     <section id="favFood" class="halfSection">
         <h2>Favorite foods</h2>
         <ul>
-            <li>Pizza</li>
+            <li id="pizza">Pizza</li>
             <li>Fried chicken</li>
             <li>Salad</li>
             <li>Sushi</li>
@@ -46,5 +47,13 @@
         <img src="http://www.intro-webdesign.com/images/newlogo.png" alt="web development for everyone logo" style="width:10%" />
         <p>This page was created by Holtzrogue &amp; Coleen van Lent. To learn more about web design, visit <a href="http://www.intro-webdesign.com">Intro to Web Design</a>.</p>
     </footer>
+    <script>
+        alert("This is annoying isn't it?");
+        var title = prompt("What is your name?");
+        document.getElementById("pageTitle").innerHTML = title;
+    </script>
+    <noscript>
+        Your browser does not support, or has disabled Javascript.
+    </noscript>
 </body>
 </html>
