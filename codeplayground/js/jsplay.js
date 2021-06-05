@@ -46,3 +46,24 @@ function addNew() {
     document.getElementById("array").innerHTML = array1;
 
 }
+
+//Show hide blocks
+function show() {
+    var x = document.getElementById("forms")
+    x.className = "open"
+}
+
+function hide() {
+    var x = document.getElementById("forms")
+    x.className = "close"
+}
+
+//Validate input
+function checkemail() {
+    var email1 = document.getElementById('email1');
+    var email2 = document.getElementById('email2');
+    if (email1.value != email2.value) {
+        alert("Check that the two emails are the same.");
+        return false;
+    }
+}

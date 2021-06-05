@@ -39,6 +39,11 @@ section {
     padding: 4px 0px;
 }
 
+label {
+    display: block;
+    margin: 5px 0px;
+    padding: 4px 0px;
+}
 footer {
     clear: both;
     text-align: center;

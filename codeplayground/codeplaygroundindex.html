@@ -8,9 +8,10 @@
     <script src="js/codeplayground.js"></script>
 </head>
 <body onload="showDate()">
+    <!--Header-->
     <header>
         <h1 id="pageTitle">Coding playground</h1>
-        <p>Practicing html css and javascript code here, mistakes abound</p>
+        <p>Practicing coding here, mistakes abound</p>
         <button type="button" onclick="testFunc()">Testing functions</button>
         <!--Navigation-->
         <nav aria-label="Navigation">
@@ -26,7 +27,9 @@
                 <li aria-label="Current page">
                     Current page
                     <ul>
-                        <li><a href="#hwSection">Homework section</a></li>
+                        <li><a href="#hwSection">Homework</a></li>
+                        <li><a href="#pgSection">Playground</a></li>
+                        <li><a href="#resourceSection">Resources</a></li>
                     </ul>
                 </li>
             </ol>
@@ -104,20 +107,27 @@
                         <td>Coursera</td>
                         <td>UofMichigan</td>
                         <td>Homework 1</td>
-                        <td><a href="homework/JSUofMHW1/index.html">Go</a></td>
+                        <td><a href="homework/JSUofMHW1/index.html" target="_blank">Go</a></td>
+                    </tr>
+                    <tr>
+                        <td>Coursera</td>
+                        <td>UofMichigan</td>
+                        <td>Homework 2</td>
+                        <td><a href="homework/JSUofMHW2/index.html" target="_blank">Go</a></td>
                     </tr>
                 </tbody>
             </table>
         </section>
         <!--Playground-->
         <section>
-            <h1>Playground</h1>
+            <h1 id="pgSection">Playground</h1>
             <ul>
                 <li>Javascript <a href="js/jsplay.html" target="_blank">Go</a></li>
             </ul>
         </section>
+        <!--Resources-->
         <section>
-            <h1>Resources</h1>
+            <h1 id="resourceSection">Resources</h1>
             <ul>
                 <li>w3school<a href="https://www.w3schools.com/">here</a></li>
             </ul>
@@ -132,6 +142,7 @@
                         <td>
                             <ul>
                                 <li>HTML tags cheatsheet <a href="https://www.wpkube.com/html5-cheat-sheet/">here</a></li>
+                                <li>Form input patterns <a href="http://html5pattern.com/">here</a></li>
                             </ul>
                         </td>
                         <td>

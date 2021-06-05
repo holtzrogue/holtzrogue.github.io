@@ -1,12 +1,14 @@
 //Testing
 function testFunc() {
-    var x = prompt("Please input your name here:");
-    document.getElementById("pageTitle").innerHTML = x + "'s coding playground";
+    var username = prompt("Please input your name here:");
+    if (username.length != 0) {
+        document.getElementById("pageTitle").innerHTML = username + "'s coding playground";
+    }
+    else {
+        document.getElementById("pageTitle").innerHTML = "Anonymous capybara's coding playground";
+    }
+    
 }
-
-
-
-
 
 
 //Auto 

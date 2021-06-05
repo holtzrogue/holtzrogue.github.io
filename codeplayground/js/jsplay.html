@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/jsplay.css" />
     <script src="jsplay.js"></script>
 </head>
@@ -14,6 +14,12 @@
         <button type="button" onclick="hideName()" onmouseover="hoverElement(this)" onmouseout="hoverOff()">Hide your name</button>
     </header>
     <main>
+        <section>
+            <h1>Show and hide</h1>
+            <p>Forms</p>
+            <button onclick="show()">Show forms</button>
+            <button onclick="hide()">Hide forms</button>
+        </section>
         <section>
             <h1>Calculator</h1>
             <table>
@@ -38,7 +44,7 @@
             </table>
         </section>
         <section>
-            <p id="hoverText" >Try hovering over something</p>
+            <p id="hoverText">Try hovering over something</p>
         </section>
         <section>
             <h1>Arrays</h1>
@@ -46,7 +52,40 @@
             <button type="button" onclick="addNew()">Add item</button>
         </section>
 
+        <section id="forms">
+            <h1>Form test grounds</h1>
+            <form id="inputTypes">
+                <h2>Input types</h2>
+                <label>Name: <input type="text" name="name" placeholder="name here" /></label>
+                <label>Email: <input type="email" name="email" placeholder="email@email.com" /></label>
+                <label>Password: <input type="password" name="password" /></label>
+                <label>Favourite number: <input type="number" name="favnum" /></label>
+                <p>Favourite past time:</p>
+                <label><input type="radio" name="pasttime" value="gaming" />Gaming</label>
+                <label><input type="radio" name="pasttime" value="sleeping" />Sleeping</label>
+                <label><input type="radio" name="pasttime" value="eating" />Eating</label>
+                <p>Shows you've watched:</p>
+                <label><input type="checkbox" name ="showwatched" value="legendsoftomorrow" />Legends of Tomorrow</label>
+                <label><input type="checkbox" name ="showwatched" value="lostgirl" />Lost Girl</label>
+                <label><input type="checkbox" name ="showwatched" value="orphanblack" />Orphan Black</label>
+                <label><input type="checkbox" name ="showwatched" value="supergirl" />Supergirl</label>
+                <label><input type="checkbox" name ="showwatched" value="glee" />Glee</label>
+                <label><input type="checkbox" name ="showwatched" value="thegoodplace" />The Good Place</label>
+                <label>Colour:<input type="color" /></label>
+                <label>Slide this!<input type="range" name="slider" /></label>
+                <label>Today's date:<input type="date" name="todaydate" /></label>
+                <label>Fill a random URL:<input type="url" name="webpage" /></label>
+<input type="submit" name="submittype" value="Click me!" />
+            </form>
+            <form id="jsvaldiation">
+                <h2>Validation checks</h2>
+                <label>Email: <input type="email" id="email1" name="email" placeholder="email@email.com" /></label>
+                <label>Repeat email:<input type="email" id="email2" name="emailrepeat" placeholder="email@email.com" required onchange="return checkemail()" /></label>
+                <input type="submit" name="submitvalid"value="Valid?" onclick="return checkemail();"/>
+            </form>
+        </section>
     </main>
+
     <footer>
         <p>Copyright &#169; Holtzrogue 2021</p>
         <a href="../codeplaygroundindex.html">To playground mainpage</a>
