@@ -110,7 +110,6 @@ header li a {
 /*Main body*/
 
 section {
-    display: inline-block;
     width: 100%;
     box-sizing: border-box;
     border-bottom: solid 4px rgba(256,256,256,1);
@@ -119,11 +118,11 @@ section {
 }
 
 table {
-    display: inline-block;
     vertical-align: top;
     border: solid 2px rgba(256,256,256,1);
     border-collapse: collapse;
     overflow: auto;
+    margin:10px;
 }
 
 th, td {
@@ -151,11 +150,6 @@ main li {
 
 /*Homework section*/
 
-.tripleTable table {
-    display: inline-block;
-    width: 32.5%;
-}
-
 #hwSection tbody tr:nth-child(even) {
     background-color: rgba(100,100,100,0.5);
 }
@@ -168,4 +162,13 @@ main li {
 footer {
     clear: both;
     text-align: center;
+}
+
+/*Big screen adjustment*/
+@media screen and (min-width:850px) {
+    .tripleTable table {
+        display: inline-block;
+        width: 32.5%;
+        margin: 0px;
+    }
 }
