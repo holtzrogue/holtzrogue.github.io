@@ -37,6 +37,13 @@ a {
         font-style: normal;
         font-weight: bold;
     }
+
+    /*Heading styles*/
+
+    h2 {
+        font-size:1rem;
+    }
+
 /*Header*/
 
 header {
@@ -165,7 +172,7 @@ footer {
 }
 
 /*Big screen adjustment*/
-@media screen and (min-width:850px) {
+@media screen and (min-width:950px) {
     .tripleTable table {
         display: inline-block;
         width: 32.5%;

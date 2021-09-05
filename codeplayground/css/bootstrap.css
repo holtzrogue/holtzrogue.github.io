@@ -1,0 +1,14 @@
+div[class*=xs-block] {
+    font-size: 1em;
+    color: rgba(256,0,0,1);
+}
+
+div[class*=md-block] {
+    font-size: 2em;
+    color: rgba(0,256,0,1);
+}
+
+div[class*=lg-block] {
+    font-size: 3em;
+    color: rgba(0,0,256,1);
+}
