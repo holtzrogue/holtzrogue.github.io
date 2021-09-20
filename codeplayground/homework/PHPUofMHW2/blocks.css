@@ -6,7 +6,54 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+div {
+    width:25%;
+    position:fixed;
+    border:solid;
+    border-width:5px;
+    margin:5px;
+    padding:5px;
+}
 
 /* Here is one of many  CSS rules you will need... */
 #one {
+    border-color:blue;
+    bottom:5px;
+    right:5px;
+}
+
+#two {
+    border-color:green;
+    top:5px;
+    right:5px;
+}
+
+#three {
+    border-color:orange;
+    top:5px;
+    left:5px;
+}
+
+#four {
+    border-color:yellow;
+    bottom:5px;
+    left:5px;
+}
+
+#link {
+    position: center;
+    margin: auto;
+    text-align: center;
+    width: 10em;
+    background-color: blue;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
 }
