@@ -157,3 +157,9 @@ td {
 main li {
     text-align: left;
 }
+
+/*Footer*/
+footer {
+    clear: both;
+    text-align: center;
+}
