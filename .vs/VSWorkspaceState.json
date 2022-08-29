@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\codeplayground",
-    "\\codeplayground\\local"
+    "\\codeplayground\\css",
+    "\\codeplayground\\js",
+    "\\ml",
+    "\\ml\\js"
   ],
-  "SelectedNode": "\\codeplayground\\local\\fail.php",
+  "SelectedNode": "\\codeplayground\\css\\codeplaygroundmain.css",
   "PreviewInSolutionExplorer": false
 }
