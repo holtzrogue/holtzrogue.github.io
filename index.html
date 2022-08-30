@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="maincss.css" />
+    <script src="mainjs.js"></script>
     <!--Force refresh-->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 </head>
-<body>
+<body onload="showDate()">
     <!--Header-->
     <header>
         <h1>Main page</h1>
@@ -36,11 +37,18 @@
     </nav>
     <!-- Body proper-->
     <main>
-     <!--Section 1, homework?-->
+        <!--Section 1, homework?-->
         <section>
             <h1>Header</h1>
             <p>Not sure what to put here yet</p>
         </section>
     </main>
+    <!--Footer-->
+    <footer>
+        <p>Copyright &#169; Holtzrogue 2022</p>
+        <a href="#headerSection">Back to top</a>
+        <a href="http://holtzrogue.github.io">GitHub main page</a>
+        <p id="currentTime"></p>
+    </footer>
 </body>
 </html>
